@@ -1,0 +1,26 @@
+{
+  "name": "princess-script",
+  "version": "0.0.1",
+  "description": "script for visual novel",
+  "keywords": [
+    "ps",
+    "novel",
+    "princess",
+    "parser",
+    "serializer",
+    "script"
+  ],
+  "author": "EveryHongCha <everytea.time@gmail.com> (https://github.com/everyt)",
+  "license": "MIT",
+  "bin": {
+    "princess-script": "./bin/princess-script.js"
+  },
+  "files": [
+    "index.js",
+    "lib/**/*.js"
+  ],
+  "scripts": {},
+  "dependencies": {
+    "argparse": "^2.0.1"
+  }
+}

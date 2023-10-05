@@ -1,0 +1,82 @@
+'use strict';
+
+function toTokens(input) {
+  let current = 0;
+  let tokens = [];
+  let lines = 0;
+
+  let sceneName = '';
+
+  function isKeyword(keyword) {
+    let char = input[current];
+
+    if (char !== keyword[0]) {
+      return false;
+    }
+
+    let word = '';
+
+    for (let i = 0; i < keyword.length; ++i) {
+      word += input[current + i];
+    }
+
+    if (word === keyword) {
+      current += keyword.length;
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  while (current < input.length) {
+    if (isKeyword('scene')) {
+      if (input[current] === ' ') {
+        current++;
+      } else {
+        console.error('SyntaxError: Expected space after scene keyword');
+        break;
+      }
+
+      for (let i = current; i < input.length; ++i) {
+        if (input[i] === ':') {
+          break;
+        } else if (input[i] === ' ') {
+          console.error('SyntaxError: Not expected space in scene name');
+        } else {
+          sceneName += input[i];
+        }
+      }
+
+      tokens.push({
+        type: 'scene',
+        value: sceneName
+      });
+
+      current++;
+      continue;
+    }
+
+    
+    if (isKeyword('stages:')) {
+    }
+
+
+    if (isKeyword('end')) {
+      tokens.push({
+        type: 'end',
+        value: sceneName
+      });
+
+      current++;
+      continue;
+    }
+
+    
+    if (isKeyword('/n')) {
+      lines++;
+
+      current++;
+      continue;
+    }
+  }
+}
