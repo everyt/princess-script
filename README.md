@@ -1,4 +1,4 @@
 <div align="center">
-  ![](public/text.svg?raw=true)
+  ![](public/bin/PrincessScript.svg?raw=true)
   <br>The script of novel game
 </div>
