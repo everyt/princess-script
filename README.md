@@ -1,7 +1,9 @@
 <div align="center">
-  
+
+  <br><br>
+
   ![](./PrincessScript.svg?raw=true)
-  <br>The script of novel game
+  <br><b>The script of novel game</b><br><br><br><br>
 
 </div>
 
