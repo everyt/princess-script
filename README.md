@@ -93,10 +93,8 @@ optional arguments:
 ## API
 ```
 const princess = require('princess-script');
-const fs   = require('fs');
 
-const file = '/example/prologue.princess';
-const arr = princess.loadScript(fs.readFileSync(file), file);
+const arr = princess.loadScript('/example/prologue.princess');
 ```
 ### loadScript(fileContents, file);
 Convert the script to AST that will be used for engines that have not yet been made
