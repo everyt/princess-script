@@ -1,6 +1,6 @@
 {
   "name": "princess-script",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "script for visual novel",
   "keywords": [
     "novel",
@@ -17,6 +17,8 @@
   },
   "files": [
     "index.js",
+    "index.d.ts",
+    "PrincessScript.svg",
     "lib/**/*.js"
   ],
   "scripts": {},
