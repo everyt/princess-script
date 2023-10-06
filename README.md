@@ -7,6 +7,10 @@
 
 </div>
 
+## Index
+- [Installation](#Installation)
+- [API](#API)
+
 ## Installation
 
 ### node.js package manager
