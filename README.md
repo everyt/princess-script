@@ -1,6 +1,8 @@
 <div align="center">
+  
   ![](./PrincessScript.svg?raw=true)
   <br>The script of novel game
+
 </div>
 
-##Index of Contents
+## Index of Contents
