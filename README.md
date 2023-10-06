@@ -8,8 +8,8 @@
 </div>
 
 ## Index
-- [Installation](#Installation)
-- [API](#API)
+- [Installation](#installation)
+- [API](#api)
 
 ## Installation
 
