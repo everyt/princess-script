@@ -15,18 +15,27 @@
 ## Script Syntax
 
 ```
-scene name?(string):
-  stage name?(string):
-    title: value?(string)
-    background: file?(string)
-    bgm: file?(string)
-    ambience: file?(string)
-  script name?(string):
-    speaker?(string): dialogue(string)
-    options name(string):
-    change stageName(string)
-    background: file(string)
-    effect: option(string)
+scene name?:
+
+  stage name?:
+    title: value?
+    background: file?
+    bgm: file?
+    ambience: file?
+
+  script name?:
+    title: value
+    background: file
+    bgm: file
+    ambience: file
+
+    speaker?: dialogue
+    options name:
+
+    change stageName
+
+    effect: effectName
+
 end
 ```
 
