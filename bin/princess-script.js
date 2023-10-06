@@ -79,7 +79,7 @@ readFile(options.file, 'utf-8', (error, input) => {
   }
 
   if (isPrincessScript(options.file)) {
-    output = princess.loadScript(input, options);
+    output = princess.loadScript(input, options.file);
     console.table(output);
   } else {
     console.error('Not a PrincessScript file: ' + options.file);
