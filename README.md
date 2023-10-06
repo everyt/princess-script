@@ -33,5 +33,4 @@ const file = '/example/prologue.princess';
 const arr = princess.loadScript(fs.readFileSync(file), file);
 ```
 ### loadScript(fileContents, file);
-Load file to make AST for use in engine
-Engine is being built
+Convert the script to AST that will be used for engines that have not yet been made
