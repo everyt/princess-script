@@ -5,7 +5,7 @@ scene 프롤로그:
     bgm: /bgm/example.ogg
     ambience: /ambience/example.wav
     mode: monologue | dialogue' // monologue는 이름 없이 대화문만 출력됩니다.
-  dialogue:
+  script:
     에브리홍차: 안녕하세요, 이것은 첫번째 대화문입니다.
     에브리홍차: 문장의 시작은 이름 뒤에 있는 :로 구분되고, 문장의 끝은 줄이 넘어가는 것으로 인식합니다.
     에브리홍차: 구문의 들여쓰기 차이는 인식하지 않고, 단어들로 서로간의 AST를 연결합니다.
