@@ -63,7 +63,7 @@ function readFile(filename, encoding, callback) {
 
 
 function isPrincessScript(input) {
-  return input.toLowerCase().endsWith('.ps');
+  return input.toLowerCase().endsWith('.princess');
 }
 
 
@@ -86,7 +86,7 @@ readFile(options.file, 'utf-8', (error, input) => {
   }
 
   if (isPrincessScript(options.file)) {
-    output = princess.linebreaker(input);
+    output = princess.loadScript(input, options);
     console.table(output);
   } else {
     console.error('Not a PrincessScript file: ' + options.file);
