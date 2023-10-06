@@ -28,15 +28,8 @@ cli.add_argument('-v', '--version', {
 });
 
 
-cli.add_argument('-o', '--output', {
-  help: 'output file',
-  nargs: '?',
-  default: '-'
-});
-
-
 cli.add_argument('file', {
-  help: 'file to read, utf-8 encoded without BOM',
+  help: 'file to read',
   nargs: '?',
   default: '-'
 });
