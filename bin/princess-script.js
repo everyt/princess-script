@@ -41,45 +41,44 @@ const options = cli.parse_args();
 //──────────────────────────────────────────────────────────────//
 
 
-function readFile(filename, encoding, callback) {
-  if (options.file === '-') {
-    let chunks = [];
-    process.stdin.on('data', chunk => chunks.push(chunk));
-    process.stdin.on('end', () => callback(null, Buffer.concat(chunks).toString(encoding))); 
-  } else {
-    fs.readFile(filename, encoding, callback);
-  }
-}
-
-
 function isPrincessScript(input) {
   return input.toLowerCase().endsWith('.princess');
 }
 
 
-readFile(options.file, 'utf-8', (error, input) => {
-  let output;
+function readFile(filename) {
+  let filecontent;
 
-  if (error) {
-    if (error.code === 'ENOENT') {
-      console.error('File not found: ' + options.file);
-      process.exit(2);
-    }
 
-    console.error(
-      options.trace && error.stack ||
-      error.message ||
-      String(error)
-    );
+  try {
+    filecontent = fs.readFileSync(filename, 'utf8');
+  } catch (error) {
+    if (error) {
+      if (error.code === 'ENOENT') {
+        console.error('File not found: ' + options.file);
+        process.exit(2);
+      }
     
-    process.exit(1);
+      console.error(
+        options.trace && error.stack ||
+        error.message ||
+        String(error)
+      );
+      
+      process.exit(1);
+    }
   }
+  
 
-  if (isPrincessScript(options.file)) {
-    output = princess.loadScript(input, options.file);
+  if (isPrincessScript(filename)) {
+    const output = princess.loadScript(filename, filecontent);
     console.table(output);
   } else {
-    console.error('Not a PrincessScript file: ' + options.file);
+    console.error('Not a PrincessScript file: ' + filename);
     process.exit(2);
   }
-});
+}
+
+
+readFile(options.file);
+
