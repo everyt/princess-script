@@ -11,6 +11,7 @@
     "script"
   ],
   "author": "EveryHongCha <everytea.time@gmail.com> (https://github.com/everyt)",
+  "repository": "https://github.com/princess-script",
   "license": "MIT",
   "bin": {
     "princess-script": "./bin/princess-script.js"
