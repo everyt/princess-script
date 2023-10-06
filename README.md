@@ -18,23 +18,23 @@
 scene name?:
 
   stage name?:
-    title: value?
-    background: file?
-    bgm: file?
-    ambience: file?
+    title: string?
+    background: fileName?
+    bgm: fileName?
+    ambience: fileName?
 
   script name?:
     title: value
-    background: file
-    bgm: file
-    ambience: file
-
-    speaker?: dialogue
-    options name:
+    background: fileName
+    bgm: fileName
+    ambience: fileName
 
     change stageName
 
     effect: effectName
+
+    speaker?: dialogue
+    options optionName:
 
 end
 ```
