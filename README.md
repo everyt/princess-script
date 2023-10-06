@@ -2,3 +2,5 @@
   ![](./PrincessScript.svg?raw=true)
   <br>The script of novel game
 </div>
+
+##Index of Contents
