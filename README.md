@@ -28,6 +28,7 @@ scene name?(string):
     background: file(string)
     effect: option(string)
 end
+```
 
 ## Installation
 
