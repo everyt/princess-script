@@ -18,7 +18,6 @@
   "files": [
     "index.js",
     "index.d.ts",
-    "PrincessScript.svg",
     "lib/**/*.js"
   ],
   "scripts": {},
