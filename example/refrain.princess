@@ -41,16 +41,28 @@ sfx를 어떻게 구현하는지에 대해서 알아 볼 필요가 있어.
 
 장면/
   변수/
-    주인공: '<p style='color: red; font-size: 1.2rem;'>김용사</p>';
-    배경화면: 'images/backgrounds/kingWangZzangMutZinBaeGyeon.png';
+    protagonis: '<p style='color: red; font-size: 1.2rem;'>김용사</p>';
+    background: 'images/backgrounds/kingWangZzangMutZinBaeGyeon.png';
+    fade-in: 'effects/fade-in.tsx'; // 장면 위로 덧씌워서 재생함
+    fade-out: 'effects/fade-out.tsx';
+    선택지2: '선택지 2를 선택하기 위한 문자열 변수';
   무대/
     타이틀:
-    화면: 배경화면;
-    음악:
-    소음:
+    배경화면: background;
+    배경음악:
+    환경음:
+    스타일: 기본;
   대화/
     '이름': '대화문';
-    주인공: "그래 그래, 이 몸이 주인공이시라고.";
+    protagonis: "그래 그래, 이 몸이 주인공이시라고.";
+    효과 fade-in;
+    선택지/
+      '선택지 1을 선택합니다.'/
+        protagonis: '이 선택지를 선택했다니, 제정신이야?';
+      선택지2/
+        protagonis: '맞아. 이게 정답이었다라고.';
+    protagonis: '이제 알겠어?';
+    효과 fade-out;
 
 처럼, 예약어의 경우는 구태여 ''를 포함할 필요가 없지만 이름같은 경우엔 ''가 필요해.
 쌍따옴표나 그냥 따옴표나 둘 다 쓸수 있게.
@@ -70,3 +82,17 @@ sfx를 어떻게 구현하는지에 대해서 알아 볼 필요가 있어.
 스크립트 언어니까 굳이 AST에 목 맬 필요가 없어 내가 편한 구조로 생성하면 되는 거지
 
 틀 예약어(AST구조) - 내용(변수/대화같은 것들)
+
+변수에 타입 부여하기?
+
+그리고 변수 대화 무대의 위치가 어디에 있든, 서로 이어서 실행되게끔,
+
+현재 스크립트 해석기 구조를 보면 변수가 어디에 있든 실행되어버리는데, 이건 어쩔 수 없나?
+
+근데 이게 yaml일때?
+js-yaml로는 변수 처리가 불가능하다고 하네.
+yaml을 파싱해서 js에서 템플릿 엔진을 사용해 대체하는 방법은 있다고는 하는데,
+이런 스크립트에는 부적합해보이고.....
+빡세넹.
+
+번아웃 왔다 쉬자
