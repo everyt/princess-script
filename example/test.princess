@@ -1,0 +1,24 @@
+장면/
+  변수/
+    protagonis: '<p style="color: red; font-size: 1.2rem;">김용사</p>';
+    background: 'images/backgrounds/kingWangZzangMutZinBaeGyeon.png';
+    fade-in: 'effects/fade-in.tsx'; // 장면 위로 덧씌워서 재생함
+    fade-out: 'effects/fade-out.tsx';
+    선택지2: '선택지 2를 선택하기 위한 문자열 변수';
+  무대/
+    타이틀:
+    배경화면: background;
+    배경음악:
+    환경음:
+    스타일: 기본;
+  대화/
+    '이름': '대화문';
+    protagonis: "그래 그래, 이 몸이 주인공이시라고.";
+    효과 fade-in;
+    선택지/
+      '선택지 1을 선택합니다.'/
+        protagonis: '이 선택지를 선택했다니, 제정신이야?';
+      선택지2/
+        protagonis: '맞아. 이게 정답이었다라고.';
+    protagonis: '이제 알겠어?';
+    효과 fade-out;
