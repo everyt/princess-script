@@ -5,6 +5,7 @@
     fade-in: 'effects/fade-in.tsx'; // 장면 위로 덧씌워서 재생함
     fade-out: 'effects/fade-out.tsx';
     select2: '선택지 2를 선택하기 위한 문자열 변수';
+    null: '빈 값';
   무대/
     타이틀: 
     배경화면: background;
@@ -22,4 +23,8 @@
     종료;
     protagonis: '이제 알겠어?';
     효과 fade-out;
-    
+    '그런데 이런 식의 대화문은 인식 못 할거 같은데';
+    null: '뭐 대충 이런식으로 땜빵하면 되지ㅋㅋ';
+    '아니네 마지막줄을 인식 못하는 거였네ㅋㅋㅋㅋ';
+    "이건 어떻게 해?";
+!@#$/
