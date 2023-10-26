@@ -6,7 +6,7 @@
     fade-out: 'effects/fade-out.tsx';
     select2: '선택지 2를 선택하기 위한 문자열 변수';
   무대/
-    타이틀:
+    타이틀: 
     배경화면: background;
     배경음악:
     환경음:
