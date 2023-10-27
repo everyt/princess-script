@@ -1,4 +1,4 @@
-장면/
+씬/
   변수/
     protagonis: '<p style="color: red; font-size: 1.2rem;">김용사</p>';
     background: 'images/backgrounds/kingWangZzangMutZinBaeGyeon.png';
@@ -20,6 +20,7 @@
       protagonis: '이 선택지를 선택했다니, 제정신이야?';
     선택지 select2;
       protagonis: '맞아. 이게 정답이었다라고.';
+      점프 파일경로;
     종료;
     protagonis: '이제 알겠어?';
     효과 fade-out;
@@ -27,4 +28,6 @@
     null: '뭐 대충 이런식으로 땜빵하면 되지ㅋㅋ';
     '아니네 마지막줄을 인식 못하는 거였네ㅋㅋㅋㅋ';
     "이건 어떻게 해?";
-!@#$/
+    변경 타이틀 ~~~;
+    점프 파일경로;
+끝/
