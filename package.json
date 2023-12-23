@@ -2,6 +2,7 @@
   "name": "princess-script",
   "version": "0.0.6",
   "description": "script for visual novel",
+  "type": "module",
   "keywords": [
     "novel",
     "princess",
@@ -16,12 +17,16 @@
     "princess-script": "./bin/princess-script.js"
   },
   "files": [
-    "index.js",
+    "index.ts",
     "index.d.ts",
-    "lib/**/*.js"
+    "lib/**/*.ts"
   ],
   "scripts": {},
   "dependencies": {
-    "argparse": "^2.0.1"
+    "argparse": "^2.0.1",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5"
   }
 }
